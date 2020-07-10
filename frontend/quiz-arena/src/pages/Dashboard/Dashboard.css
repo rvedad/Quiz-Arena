@@ -1,0 +1,80 @@
+.dashboard-page {
+  padding: var(--sp-7) 0 var(--sp-8);
+}
+
+.dash-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--sp-6);
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+
+.dash-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--orange);
+  margin-bottom: var(--sp-2);
+}
+
+.dash-title {
+  font-size: 1.8rem;
+  margin-bottom: var(--sp-1);
+}
+
+.dash-sub {
+  color: var(--slate);
+  font-size: 0.9rem;
+}
+
+.btn-lg {
+  padding: var(--sp-4) var(--sp-6);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-7);
+}
+
+.stat-card {
+  border-top: 3px solid var(--border);
+}
+
+.stat-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: var(--sp-1);
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--slate);
+  margin-bottom: var(--sp-4);
+}
+
+.muted {
+  color: var(--slate);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 600px) {
+  .dash-stats {
+    grid-template-columns: 1fr;
+  }
+}

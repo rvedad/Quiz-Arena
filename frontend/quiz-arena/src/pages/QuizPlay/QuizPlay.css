@@ -1,0 +1,137 @@
+.play-page {
+  padding: var(--sp-6) 0 var(--sp-8);
+  min-height: calc(100vh - 62px);
+  background: var(--offwhite);
+}
+
+.play-container {
+  max-width: 680px;
+}
+
+.play-progress-bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 999px;
+  margin-bottom: var(--sp-3);
+  overflow: hidden;
+}
+
+.play-progress-fill {
+  height: 100%;
+  background: var(--orange);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.play-counter {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--slate);
+  text-align: right;
+  margin-bottom: var(--sp-5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.play-main {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-5);
+}
+
+.play-timer-wrap {
+  flex-shrink: 0;
+  padding-top: var(--sp-4);
+}
+
+.play-card {
+  flex: 1;
+  border-top: 4px solid var(--orange);
+}
+
+.play-question {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--midnight);
+  margin: var(--sp-4) 0 var(--sp-5);
+  line-height: 1.4;
+}
+
+.play-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.option-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: #fff;
+  text-align: left;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+  cursor: pointer;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--orange);
+  background: var(--blush);
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+.option-btn.option-selected {
+  border-color: var(--orange);
+  background: var(--blush);
+}
+
+.option-letter {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--offwhite);
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: var(--slate);
+  flex-shrink: 0;
+}
+
+.option-selected .option-letter {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+
+.option-text {
+  font-size: 0.95rem;
+  color: var(--midnight);
+  font-weight: 500;
+}
+
+.play-submitting {
+  text-align: center;
+  color: var(--slate);
+  margin-top: var(--sp-5);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 600px) {
+  .play-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .play-timer-wrap {
+    padding-top: 0;
+  }
+}

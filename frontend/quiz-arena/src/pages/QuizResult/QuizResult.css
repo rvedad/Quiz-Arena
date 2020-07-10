@@ -1,0 +1,33 @@
+.result-page {
+  padding: var(--sp-7) 0 var(--sp-8);
+}
+
+.result-hero {
+  text-align: center;
+  margin-bottom: var(--sp-7);
+  border-top: 4px solid var(--orange);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate);
+  margin-bottom: var(--sp-3);
+}
+
+.result-score {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: var(--sp-2);
+}
+
+.result-actions {
+  display: flex;
+  gap: var(--sp-3);
+  justify-content: center;
+}

@@ -1,0 +1,28 @@
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+.admin-stat-card {
+  border-top: 3px solid var(--border);
+  transition: border-top-color 0.2s ease;
+}
+
+.admin-stat-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: var(--sp-2);
+  line-height: 1;
+}
+
+.admin-stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.muted { color: var(--slate); font-size: 0.92rem; }

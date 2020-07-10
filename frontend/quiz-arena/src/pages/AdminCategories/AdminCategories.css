@@ -1,0 +1,23 @@
+.muted {
+  color: var(--slate);
+  font-size: 0.92rem;
+}
+
+.delete-warning {
+  color: var(--slate);
+  margin-bottom: var(--sp-5);
+  line-height: 1.5;
+}
+
+.delete-warning strong {
+  color: var(--midnight);
+}
+
+.modal-actions {
+  display: flex;
+  gap: var(--sp-3);
+}
+
+.field {
+  margin-bottom: var(--sp-4);
+}

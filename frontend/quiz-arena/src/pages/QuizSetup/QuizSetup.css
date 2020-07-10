@@ -1,0 +1,63 @@
+.setup-page {
+  padding: var(--sp-7) 0 var(--sp-8);
+}
+
+.setup-title {
+  font-size: 1.8rem;
+  margin-bottom: var(--sp-2);
+}
+
+.setup-sub {
+  color: var(--slate);
+  margin-bottom: var(--sp-6);
+}
+
+.setup-card {
+  max-width: 520px;
+  border-top: 4px solid var(--orange);
+}
+
+.setup-field {
+  margin-bottom: var(--sp-5);
+}
+
+.pill-group {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  margin-top: var(--sp-2);
+}
+
+.diff-pill {
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  color: var(--slate);
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: all 0.15s ease;
+  background: #fff;
+}
+
+.diff-pill:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.diff-pill-active {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+
+.diff-pill-active:hover {
+  background: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: #fff;
+}
+
+.setup-submit {
+  padding: var(--sp-4);
+  font-size: 1rem;
+  margin-top: var(--sp-2);
+}
